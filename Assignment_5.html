@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    /*Descendant Combinator (Space) */
+    /* Selects ALL <p> inside .parent (even deeply nested ones) */
+
+/* div p {
+    color: blue;
+} */
+
+
+
+
+
+/* Child Combinator (>) */
+/* Selects ONLY direct <p> children of .parent (ignores nested ones) */
+
+/* .parent > p {
+    color: red;
+} */
+
+
+
+
+
+/*  Adjacent Sibling Combinator (+) */
+/* Selects ONLY the first <p> immediately after <h2> */
+
+/* h2 + p {
+    font-weight: bold;
+} */
+
+
+
+/*  General Sibling Combinator (~) */
+/* Selects ALL <p> that come after <h2> (same parent) */
+
+h2 ~ p {
+    text-decoration: underline;
+}
+
+
+</style>
+<body>
+    <div class="parent">
+        <h1>Main Title</h1>
+        <p>Paragraph inside parent.</p>
+    
+        <section>
+           <p>Nested paragraph inside section.</p>
+        </section>
+    
+        <h2>Subheading</h2>
+        <p>Paragraph after h2.</p>
+        <p>Another paragraph after h2.</p>
+    </div>
+    
+    <p>Paragraph outside parent.</p>
+    
+</body>
+</html>
